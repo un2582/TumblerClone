@@ -5,7 +5,7 @@ npm init and npm install is just to make sure all the dependencies and start up 
 <h2>To run the actual code: </h2>
 node index.js or nodemon </br>
 
-<h2>For Client Code (In terminal): </h1>
+<h1>For Client Code (In terminal): </h1>
 npm start </br>
 As simple as that for the client side</br>
 

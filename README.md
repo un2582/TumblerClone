@@ -15,5 +15,5 @@ The secret key inside the .env file is used to sign and decode the jsonwebtoken.
 <h2>How to hide .env file from committing to github:</h2>
 1. create a .gitignore text file at root of repository </br>
 2. inside the .gitignore text file add .env on its own line </br>
-3. from now on any commits will not be updated for .env specifically. for ex: whenever I commit, .env stays as the fake key that I put in rather than updating it to be the key that I'm actually using.
+3. from now on any commits will not be updated for .env specifically. for ex: whenever I commit, .env stays as the fake key that I put in rather than updating it to be the key that I'm actually using. </br>
 4. it is considered good practice to change the secret_key once in a while, it does not affect the passwords already stored. I change mine periodically as well.

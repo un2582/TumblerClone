@@ -1,8 +1,10 @@
+require('dotenv').config();
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-const errorHandler = require("./handlers/errorHandler");
+const errorHandler = require("./handlers/errors");
 const authRoutes = require("./routes/auth");
+const PORT = 8080;
 
 app.use(bodyParser({extended: true}));
 app.use(bodyParser.json());
@@ -17,3 +19,7 @@ app.use(function(req, res, next){
 });
 
 app.use(errorHandler);
+
+app.listen(PORT, function(){
+    console.log(`Listening to ${PORT}`);
+});

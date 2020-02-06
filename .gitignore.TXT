@@ -1,1 +1,1 @@
-TumblerClone-Server/.env
+.env
